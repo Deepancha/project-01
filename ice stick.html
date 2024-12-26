@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Popsicle Flavors</title>
+
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+            background-color: white; /* Set background color to white */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            text-align: center;
+            background-color: white;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            margin: 0 20px;
+            color: #ff6f61;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown a {
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            text-align: left;
+        }
+
+        .dropdown-content a {
+            color: #ff6f61;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+
+        header {
+            background-color: pink;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            top:0;
+            position: sticky;
+        }
+
+        header h1 {
+            font-size: 36px;
+        
+        }
+
+
+        footer {
+            background-color: #c96aa5;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        section {
+            padding: 50px;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .flavor-title {
+            font-size: 40px;
+            margin: 20px 0;
+        }
+
+        .flavor-description {
+            font-size: 24px;
+            margin-top: 20px;
+            max-width: 600px;
+        }
+
+        .flavor-image {
+            width: 50%;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 30px;
+            transition: transform 0.3s ease; 
+        }
+
+        
+
+        /* Color for Mango section */
+        #Mango {
+            background-color: #ffcc00; 
+        }
+
+        /* Color for Strawberry section */
+        #Strawberry {
+            background-color: #f06292; 
+        }
+
+        /* Color for Orange section */
+        #Orange {
+            background-color: #ff9800; 
+        }
+
+        /* Color for Lemon section */
+        #Lemon {
+            background-color: #ffeb3b; 
+        }
+
+        /* Color for Blueberry section */
+        #Blueberry {
+            background-color: #3f51b5; 
+        }
+
+        /* Color for Watermelon section */
+        #Watermelon {
+            background-color: #ff3b30; 
+        }
+
+        /* Color for Pineapple section */
+        #Pineapple {
+            background-color: #ffeb3b; 
+        }
+
+        /* Color for Mint Chocolate Chip section */
+        #MintChocolateChip {
+            background-color: #4caf50; 
+        }
+        #contact {
+            background-color: #f8b400;
+            padding: 50px;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Popsicle Flavors</h1>
+    
+        <nav>
+            <a href="ice cream.html">Home</a>
+          
+            <div class="dropdown">
+                <a href="#">Fruits & Flavours</a>
+                <div class="dropdown-content">
+                    <a href="furit's.html">Flavours</a>
+                    <a href="furits1.html">Fruits</a>
+                    <a href="ice stick.html">Popsicle</a>
+                </div>
+            </div>
+            <a href="#contact">Contact</a>
+            <li style="float:right"><a href="login1.html" class="login1-btn">Login</a></li>
+        </nav>
+    </header>
+
+    <!-- Mango Popsicle Section -->
+    <section id="Mango">
+        <div style="display: flex; flex-direction: row-reverse; align-items: center; justify-content: center;">
+            <img class="flavor-image" src="https://media.istockphoto.com/id/1169341236/photo/fresh-mango-fruit-popsicle-ice-in-the-plastic-shaping-box-on-bright-marble-table-summer-mood.jpg?s=612x612&w=0&k=20&c=KkerTOgiMhtJ10NAofJAHCXepsSUT4_Vv7cATmW__bM=" alt="Mango Popsicle">
+            <div>
+                <h2 class="flavor-title">Mango Popsicle</h2>
+                <p class="flavor-description">A tropical treat made from fresh mangoes, delivering a sweet and tangy flavor with a refreshing feel.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strawberry Popsicle Section -->
+    <section id="Strawberry">
+        <div style="display: flex; flex-direction: row-reverse; align-items: center; justify-content: center;">
+            <img class="flavor-image" src="https://media.istockphoto.com/id/527543442/photo/homemade-popsicles-with-strawberry-and-banana-copy-space.jpg?s=612x612&w=0&k=20&c=jNVhbvuA9_BwiDQBXSMDCDIjODXzYzjmlVvXHHdqX3c=" alt="Strawberry Popsicle">
+            <div>
+                <h2 class="flavor-title">Strawberry Popsicle</h2>
+                <p class="flavor-description">Made with ripe strawberries, this popsicle is bursting with a sweet, juicy flavor that is perfect for a summer day.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Orange Popsicle Section -->
+    <section id="Orange">
+        <div style="display: flex; flex-direction: row-reverse; align-items: center; justify-content: center;">
+            <img class="flavor-image" src="https://media.istockphoto.com/id/872642386/photo/orange-popsicles.jpg?s=612x612&w=0&k=20&c=3pbLt8GlTc9eOyCZN4vj-tswjo09haKAOZ3xppJ6ljY=" alt="Orange Popsicle">
+            <div>
+                <h2 class="flavor-title">Orange Popsicle</h2>
+                <p class="flavor-description">A citrusy delight, our orange popsicle offers a zesty flavor with a perfect balance of tangy and sweet.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lemon Popsicle Section -->
+    <section id="Lemon">
+        <div style="display: flex; flex-direction: row-reverse; align-items: center; justify-content: center;">
+            <img class="flavor-image" src="https://media.istockphoto.com/id/867034702/photo/summer-lemonade-popsicles-with-lime-and-chipped-ice-top-view.jpg?s=612x612&w=0&k=20&c=MqPGbrLjR74QVjD6iJv-3Ek1mgtLnsdSb4AxllsieME=" alt="Lemon Popsicle">
+            <div>
+                <h2 class="flavor-title">Lemon Popsicle</h2>
+                <p class="flavor-description">Our lemon popsicle is tangy and refreshing, offering a burst of citrus flavor that’s perfect for cooling off.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blueberry Popsicle Section -->
+    <section id="Blueberry">
+        <div style="display: flex; flex-direction: row-reverse; align-items: center; justify-content: center;">
+            <img class="flavor-image" src="https://media.istockphoto.com/id/1333165772/photo/ice-cream-popsicles-from-fresh-organic-blueberries.jpg?s=612x612&w=0&k=20&c=qMQDp_1Q25erTwNUolOAizuwIl9RBaaWhuuvX20Ek88=" alt="Blueberry Popsicle">
+            <div>
+                <h2 class="flavor-title">Blueberry Popsicle</h2>
+                <p class="flavor-description">Rich in flavor, our blueberry popsicle delivers a burst of sweetness and a smooth, refreshing experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Watermelon Popsicle Section -->
+    <section id="Watermelon">
+        <div style="display: flex; flex-direction: row-reverse; align-items: center; justify-content: center;">
+            <img class="flavor-image" src="https://media.istockphoto.com/id/478437304/photo/watermelon-shaped-ice-cream-pops.webp?a=1&b=1&s=612x612&w=0&k=20&c=XiCmuwD8bZp7XsfwLtO__FQ5oUxzxiJk0NkeQegjFJQ=" alt="Watermelon Popsicle">
+            <div>
+                <h2 class="flavor-title">Watermelon Popsicle</h2>
+                <p class="flavor-description">A refreshing and hydrating treat made with juicy watermelon, perfect for hot summer days.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pineapple Popsicle Section -->
+    <section id="Pineapple">
+        <div style="display: flex; flex-direction: row-reverse; align-items: center; justify-content: center;">
+            <img class="flavor-image" src="https://media.istockphoto.com/id/660475688/photo/homemade-pineapple-popsicles.webp?a=1&b=1&s=612x612&w=0&k=20&c=TJONHdSHz3n4PUmZH3Zd295w3Qr3H3i0NjY_M8oxREI=" alt="Pineapple Popsicle">
+            <div>
+                <h2 class="flavor-title">Pineapple Popsicle</h2>
+                <p class="flavor-description">Sweet and tangy pineapple popsicle that offers a tropical taste, perfect for cooling off during the summer.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mint Chocolate Chip Popsicle Section -->
+    <section id="MintChocolateChip">
+        <div style="display: flex; flex-direction: row-reverse; align-items: center; justify-content: center;">
+            <img class="flavor-image" src="https://media.istockphoto.com/id/1154306436/photo/frozen-dessert-and-summer-snack-concept-with-close-up-on-two-delicious-chocolate-and-hazelnut.webp?a=1&b=1&s=612x612&w=0&k=20&c=zoWOtxmFbN9PyHmEk4uGmTdYlU9pyjGR-S0E7WdNHq8=" alt="Mint Chocolate Chip Popsicle">
+            <div>
+                <h2 class="flavor-title">Mint Chocolate Chip Popsicle</h2>
+                <p class="flavor-description">A refreshing mint flavor paired with crunchy chocolate chips, creating the perfect balance of cool and creamy.</p>
+            </div>
+        </div>
+    </section>
+    <div style="text-align: center; background-color: pink;" id="contact">
+        <h2> Contact</h2>
+        <p><b>Address:</b>Sub Plot No11, Final Plot no 106,
+            Hadapsar Industrial township, Ramtekdi,
+            Mouje, Hadapsar, Pune 411013</p><br>
+            <p><b>Phone no.:</b>7028080321 </p>
+            <p><b>Email:</b>enquiry@Worldicecreams.com</p>
+        </div>
+
+   
+
+</body>
+</html>

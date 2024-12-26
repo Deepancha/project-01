@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Website Login</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Set up the background and basic styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Styling the login container */
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        /* Styling the login box */
+        .login-box {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+            max-width: 350px;
+        }
+
+        /* Heading styling */
+        h2 {
+            color: #ff69b4; /* Ice cream pink */
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        /* Input field styling */
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            outline: none;
+            margin-top: 5px;
+        }
+
+        .input-group input:focus {
+            border-color: #ff69b4; /* Ice cream pink */
+        }
+
+        /* Login button styling */
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff1493; /* Darker pink */
+        }
+
+        /* Forgot password link styling */
+        .forgot-password {
+            display: block;
+            margin-top: 10px;
+            color: #666;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .forgot-password:hover {
+            color: #ff69b4;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Login</h2>
+            <form action="ice cream.html" method="get"> <!-- Changed the action to ice_cream.html -->
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <div class="login-actions">
+                    <button type="submit">Login</button>
+                    <a href="/forgot-password" class="forgot-password">Forgot password?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

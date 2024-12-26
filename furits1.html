@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fruit Flavored Ice Cream</title>
+
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+            background-color: white; /* Set background color to white */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            text-align: center;
+            background-color: white;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            margin: 0 20px;
+            color: #ff6f61;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown a {
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            text-align: left;
+        }
+
+        .dropdown-content a {
+            color: #ff6f61;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+
+        header {
+            background-color: pink;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            top:0;
+            position: sticky;
+        }
+
+        header h1 {
+            font-size: 36px;
+        
+        }
+
+
+
+        footer {
+            background-color:  #c96aa5;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        section {
+            padding: 50px;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .flavor-title {
+            font-size: 40px;
+            margin: 20px 0;
+        }
+
+        .flavor-description {
+            font-size: 24px;
+            margin-top: 20px;
+            max-width: 600px;
+        }
+
+        .flavor-image {
+            width: 50%;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 30px;
+        }
+
+        /* Color for Mango section */
+        #Jackfruit {
+            background-color: 
+            #d3ceba; /* Mango color */
+        }
+
+        /* Color for Pineapple section */
+        #Pineapple {
+            background-color: #ffeb3b; /* Pineapple color */
+        }
+
+        /* Color for Raspberry section */
+        #Raspberry {
+            background-color: #e91e63; /* Raspberry color */
+        }
+
+        /* Color for Peach section */
+        #Kalajamun {
+            background-color: #182657; /* Peach color */
+        }
+
+        #Tendercoconut {
+            background-color: rgba(193, 190, 190, 0.849); /* Peach color */
+        }
+        #contact {
+            background-color: #f8b400;
+            padding: 50px;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <header>
+        <h1>Fruit Flavored Ice Creams</h1>
+    
+        <nav>
+            <a href="ice cream.html">Home</a>
+            <div class="dropdown">
+                <a href="#">Fruits & Flavours</a>
+                <div class="dropdown-content">
+                    <a href="furit's.html">Flavours</a>
+                    <a href="furits1.html">Fruits</a>
+                    <a href="ice stick.html">Popsicle</a>
+                </div>
+            </div>
+            <a href="#contact">Contact</a>
+            <li style="float:right"><a href="login1.html" class="login1-btn">Login</a></li>
+        </nav>
+    </header>
+
+    <!-- Jack furit Section -->
+    <section id="Jackfruit">
+        <div style="display: flex; flex-direction: row-reverse; align-items: center; justify-content: center;">
+            <img class="flavor-image" src="https://i.ytimg.com/vi/fU7WZEKTQI8/maxresdefault.jpg" alt="jackfruit Ice Cream">
+            <div>
+                <h2 class="flavor-title">Jack furit Ice Cream</h2>
+                <p class="flavor-description">Made with ripe, fresh Jackfruit, this tropical delight offers a creamy, sweet, and refreshing experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pineapple Section -->
+    <section id="Pineapple">
+        <div style="display: flex; flex-direction: row-reverse; align-items: center; justify-content: center;">
+            <img class="flavor-image" src="https://media.istockphoto.com/id/1147950772/photo/pineapple-ice-cream-cup-on-white-table-homemade-in-kitchen.jpg?s=612x612&w=0&k=20&c=3ZGGuVzxEwiNMBUbe3Tn1WV6FM7_vKzygHGlJbp7aGA=" alt="Pineapple Ice Cream">
+            <div>
+                <h2 class="flavor-title">Pineapple Ice Cream</h2>
+                <p class="flavor-description">Our pineapple ice cream blends tangy sweetness with a smooth, creamy texture for a refreshing treat.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Raspberry Section -->
+    <section id="Raspberry">
+        <div style="display: flex; flex-direction: row-reverse; align-items: center; justify-content: center;">
+            <img class="flavor-image" src="https://media.istockphoto.com/id/1392280331/photo/strawberry-ice-cream.jpg?s=612x612&w=0&k=20&c=bu6hx4yaSxeL0Bv8oXmehz4X1ayefcYmBQs3Ju4mLbw=" alt="Raspberry Ice Cream">
+            <div>
+                <h2 class="flavor-title">Raspberry Ice Cream</h2>
+                <p class="flavor-description">Packed with the juicy goodness of raspberries, this flavor is a sweet and slightly tart sensation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- kala Section -->
+    <section id="Kalajamun">
+        <div style="display: flex; flex-direction: row-reverse; align-items: center; justify-content: center;">
+            <img class="flavor-image" src="https://www.beatoapp.com/blog/wp-content/uploads/2018/07/shutterstock_108153845.jpg" alt="Kalajamun Ice Cream">
+            <div>
+                <h2 class="flavor-title">Kala jamun Ice Cream</h2>
+                <p class="flavor-description">Creamy and smooth, our Kala jamun ice cream is the perfect balance of sweetness and fruity goodness.</p>
+            </div>
+        </div>
+    </section>
+
+     <!-- coconut Section -->
+     <section id="Tendercoconut">
+        <div style="display: flex; flex-direction: row-reverse; align-items: center; justify-content: center;">
+            <img class="flavor-image" src="https://media.istockphoto.com/id/454947497/photo/coconut-ice-cream.jpg?s=612x612&w=0&k=20&c=8R7zJEcLbrvKGp--VamxMazVMEnsMpm9cw90LEylKto=" alt="Tender coconut Ice Cream">
+            <div>
+                <h2 class="flavor-title">Trender ccoconut Ice Cream</h2>
+                <p class="flavor-description">Creamy and smooth, our coconut ice cream is the perfect balance of sweetness and  goodness.</p>
+            </div>
+        </div>
+    </section>
+    <div style="text-align: center; background-color: pink;" id="contact">
+        <h2> Contact</h2>
+        <p><b>Address:</b>Sub Plot No11, Final Plot no 106,
+            Hadapsar Industrial township, Ramtekdi,
+            Mouje, Hadapsar, Pune 411013</p>
+            <p><b>Phone no.:</b>7028080321 </p>
+            <p><b>Email:</b>enquiry@Worldicecreams.com</p>
+        </div>
+
+    
+
+</body>
+</html>

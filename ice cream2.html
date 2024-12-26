@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login - Ice Cream World</title>
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1563589173312-476d8c36b242?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            width: 350px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #ff6f61; /* Ice cream theme color */
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 2px solid #ff6f61;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        .input-field:focus {
+            border-color: #ff2d00; /* Darker focus color */
+            outline: none;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 14px;
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-btn:hover {
+            background-color: #e05e51; /* Darker shade on hover */
+        }
+
+        .register-link {
+            margin-top: 15px;
+            color: #ff6f61;
+        }
+
+        .register-link a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 14px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login to Ice Cream World</h2>
+        <form action="/login" method="POST">
+            <input type="text" class="input-field" name="username" placeholder="Username" required>
+            <input type="password" class="input-field" name="password" placeholder="Password" required>
+            <input type="Phno" class="input-field" name="Phno" placeholder="Phno" required>
+            <button type="submit" class="login-btn"><a href="ice cream.html"> Login</a></button>
+        </form>
+        <div class="register-link">
+            <p>New to Ice Cream World? <a href="#register">Create an account</a></p>
+        </div>
+    </div>
+
+  
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ice Cream World</title>
+    <link rel="icon" href="icon.jpg" type="image/x-icon">
+    <style>
+        body {
+            background-image: url('deepan1.png');
+            background-size: 100% 120%, cover;
+            background-position: center, center;
+            background-attachment: scroll, scroll;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-repeat: no-repeat;
+        }
+
+        header {
+            background-color: pink;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            top:0;
+            position: sticky;
+        }
+
+        header h1 {
+            font-size: 36px;
+        
+        }
+
+        nav {
+            text-align: center;
+            background-color: white;
+            padding: 10px;
+            margin-bottom: -20px;
+        }
+
+        nav a {
+            margin: 0 20px;
+            color: #ff6f61;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown a {
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            text-align: left;
+        }
+
+        .dropdown-content a {
+            color: #ff6f61;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .main-content {
+            background-color: white;
+        }
+
+        .p1 {
+            color: white;
+            text-align: center;
+            padding-top: 90px;
+            line-height: -5;
+            margin: 0px;
+            padding-top: 160px;
+        }
+
+        .p2 {
+            color: white;
+            text-align: center;
+            line-height: -3;
+            margin: 0px;
+        }
+
+        .p3 {
+            color: white;
+            text-align: center;
+            line-height: -3;
+            margin: 0px;
+        }
+
+        .p4 {
+            margin: 100px;
+            font-size: 70px;
+            text-align: center;
+            color: white;
+        }
+
+        
+        .p5 {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; /* Vertically align items */
+                           
+            background-size: cover; 
+            background-position: center; 
+            height: 450px; /* Adjust height of the section */
+            padding: 20px;
+            position: relative;
+        }
+
+        .p5 .image-container {
+            margin-top: 100px;
+            margin-left: 30px;
+            width: 500px;
+            height: 400px;
+            background-image: url('hm.webp');
+            background-size: cover; /* Ensure the image covers the area */
+            background-position: center;
+            z-index: 1;
+            border-radius: 10px; 
+        }
+
+        .p5 p {
+
+            font-size: 25px; /* Text size */
+            text-align: left;
+            color: black; /* Set text color to black */
+            margin: 100px 80px 0;
+            text-align: justify;
+            width: 70%; /* Limit width of text */
+            
+        }
+
+        footer {
+            background-color: #ff6f61;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            position: fixed;
+            width: 100%;
+            height: 5%;
+            bottom: 0;
+        }
+
+        .logo {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Ice Cream World!</h1>
+    
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#our-story">Our Story</a>
+        <div class="dropdown">
+            <a href="#">Fruits & Flavours</a>
+            <div class="dropdown-content">
+                <a href="furit's.html">Flavours</a>
+                <a href="furits1.html">Fruits</a>
+                <a href="ice stick.html">Popsicle</a>
+            </div>
+        </div>
+        <a href="#contact">Contact</a>
+        <li style="float:right"><a href="login1.html" class="login1-btn">Login</a></li>
+    </nav>
+</header>
+
+    <p class="p1" style="font-size: 20px;">Traditional and Delicious</p>
+    <p class="p2" style="font-size: 50px;">Traditional Ice Cream</p>
+    <p class="p3" style="font-size: 40px;">Since 1980's</p>
+
+    <p class="p4" style="font-size: 30;">Our Story</p><br>
+
+    <div id="our-story" class="p5">
+        
+        <div class="image-container"></div>
+        
+      
+        <p>Taste is important. Honest ingredients, even more so. Which is why, at World Ice Creams, we make it our mission to bring you the most delightful of ice creams, ranging from the exotic to the innovative.
+
+        We have crafted flavours ranging from fruit and dry fruit variations like Tender Coconut, Alphonso Mango, Dry Fruit Overload, Roasted Almonds to international flavors such as Mediterranean Sea Salted Caramel, Madagascar Chocolate, French Vanilla, and those inspired by Indian sweetmeats such as Gulab Jamun, Sheer Khurma, Til Gud, and Gajar Halwa, to name a few.
+        
+        In our entire range of offerings, we use only milk and 100% ingredients. No artificial flavors, no coloring agents and zero preservatives: 'Honestly' is not just our motto, it’s also our promise. Through the use of milk and our hand-crafted production process, we bring you a range of enthralling tastes that you shall find only with World Ice Creams.</p>
+    </div>
+
+
+    <br>
+<div style="text-align: center; background-color: rgb(220, 174, 181);" id="contact">
+<h2> Contact</h2>
+<p><b>Address:</b>Sub Plot No11, Final Plot no 106,
+    Hadapsar Industrial township, Ramtekdi,
+    Mouje, Hadapsar, Pune 411013</p>
+    <p><b>Phone no.:</b>7028080321 </p>
+    <p><b>Email:</b>enquiry@Worldicecreams.com</p>
+</div>
+
+
+</body>
+</html>
